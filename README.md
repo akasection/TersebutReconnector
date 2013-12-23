@@ -1,8 +1,10 @@
 Tersebut Reconnector
-Current Version : 1.7 PREVIEW
-Latest Closed Version : 1.6 (Unavailable)
 ===================
+Current Version : 1.7 PREVIEW
 
+Latest Closed Version : 1.6 (Unavailable)
+
+===
 Apa sih Tersebut Reconnector?
 
 Tersebut Reconnector adalah program simpel yang dapat mengutilisasi @wifi.id agar dapat tersambung terus
