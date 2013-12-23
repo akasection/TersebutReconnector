@@ -1,0 +1,15 @@
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\bin\Release\Tersebut.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\bin\Release\Tersebut.pdb
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\bin\Release\Tersebut.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Reconnector.Licensing.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Reconnector.baseForm.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Reconnector.Resources.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Tersebut.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Tersebut.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifiid\wifiid\obj\x86\Release\Tersebut.pdb
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut.pdb

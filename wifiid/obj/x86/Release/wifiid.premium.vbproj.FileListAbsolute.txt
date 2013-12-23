@@ -1,0 +1,10 @@
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\bin\Release\Tersebut Premium.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\bin\Release\Tersebut Premium.pdb
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\bin\Release\Tersebut Premium.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Reconnector.Licensing.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Reconnector.baseForm.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Reconnector.Resources.resources
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\wifiid.premium.vbproj.GenerateResource.Cache
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.pdb

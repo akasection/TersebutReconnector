@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="wifiid.premium">
+</Property><Property Name="Solution File" Value="C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid.premium.sln">
+</Property><Property Name="User Options File" Value="C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid.premium.suo">
+</Property><Property Name="Date" Value="Wednesday, July 31, 2013">
+</Property><Property Name="Time" Value="11:28 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="wifiid.premium.sln" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid.premium.sln">
+</Event><Event ErrorLevel="0" Project="" Source="wifiid.premium.suo" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid.premium.suo">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\wifiid.premium.vbproj" Description="Project file successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\wifiid.premium.vbproj">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\wifiid.premium.vbproj.user" Description="Project user file successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\wifiid.premium.vbproj.user">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\ApplicationEvents.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\ApplicationEvents.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\CryptModule.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\CryptModule.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Dialog1.Designer.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Dialog1.Designer.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Dialog1.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Dialog1.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\StayAwake.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\StayAwake.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\ThreadControl.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\ThreadControl.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Form1.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Form1.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Form1.Designer.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Form1.Designer.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\IniModule.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\IniModule.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\AssemblyInfo.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Application.Designer.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Resources.Designer.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Settings.Designer.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\ICMPClass.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\ICMPClass.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\UnlockMod.vb" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\UnlockMod.vb">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\app.manifest" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\app.manifest">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Application.myapp" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Settings.settings" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Resources\tersebut1.ico" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Resources\tersebut1.ico">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Resources\tersebut2.ico" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Resources\tersebut2.ico">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\reconicon.ico" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\reconicon.ico">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\tersebut1.ico" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\tersebut1.ico">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Dialog1.resx" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Dialog1.resx">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\Form1.resx" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\Form1.resx">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\My Project\Resources.resx" Description="File successfully backed up as C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\Backup\wifiid\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\wifiid.premium.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="wifiid.premium" Source="wifiid\wifiid.premium.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="wifiid.premium.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="wifiid.premium.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="wifiid.premium" Source="wifiid\wifiid.premium.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

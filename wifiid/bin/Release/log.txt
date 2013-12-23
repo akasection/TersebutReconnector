@@ -1,0 +1,329 @@
+﻿[11/12/2012|21:04:21]1000022 break time.
+[11/12/2012|21:04:28]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:04:28]Done reporting HTML status :
+Web Authentication
+[11/12/2012|21:04:28]Page Title : Web Authentication
+[11/12/2012|21:04:28]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:04:28]Done reporting HTML status :
+Logged In
+[11/12/2012|21:04:28]Page Title : Logged In
+[11/12/2012|21:24:39]1186 break time.
+[11/12/2012|21:24:45]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:24:45]Done reporting HTML status :
+Web Authentication
+[11/12/2012|21:24:45]Page Title : Web Authentication
+[11/12/2012|21:24:45]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:24:45]Done reporting HTML status :
+Logged In
+[11/12/2012|21:24:45]Page Title : Logged In
+[11/12/2012|21:44:52]1190 break time.
+[11/12/2012|21:45:07]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:45:07]Done reporting HTML status :
+Web Authentication
+[11/12/2012|21:45:07]Page Title : Web Authentication
+[11/12/2012|21:45:07]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:45:07]Done reporting HTML status :
+Logged In
+[11/12/2012|21:45:07]Page Title : Logged In
+[11/12/2012|21:53:35]500 break time.
+[11/12/2012|21:54:02]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:54:02]Done reporting HTML status :
+Web Authentication
+[11/12/2012|21:54:02]Page Title : Web Authentication
+[11/12/2012|21:54:02]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|21:54:02]Done reporting HTML status :
+Logged In
+[11/12/2012|21:54:02]Page Title : Logged In
+[11/12/2012|22:14:08]1189 break time.
+[11/12/2012|22:14:14]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:14:14]Done reporting HTML status :
+Web Authentication
+[11/12/2012|22:14:14]Page Title : Web Authentication
+[11/12/2012|22:14:14]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:14:14]Done reporting HTML status :
+Logged In
+[11/12/2012|22:14:14]Page Title : Logged In
+[11/12/2012|22:34:26]1191 break time.
+[11/12/2012|22:34:45]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:34:45]Done reporting HTML status :
+Web Authentication
+[11/12/2012|22:34:45]Page Title : Web Authentication
+[11/12/2012|22:34:45]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:34:45]Done reporting HTML status :
+Logged In
+[11/12/2012|22:34:45]Page Title : Logged In
+[11/12/2012|22:54:50]1188 break time.
+[11/12/2012|22:55:09]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:55:09]Done reporting HTML status :
+Web Authentication
+[11/12/2012|22:55:09]Page Title : Web Authentication
+[11/12/2012|22:55:09]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|22:55:09]Done reporting HTML status :
+Logged In
+[11/12/2012|22:55:09]Page Title : Logged In
+[11/12/2012|23:14:56]1170 break time.
+[11/12/2012|23:15:03]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:15:03]Done reporting HTML status :
+Web Authentication
+[11/12/2012|23:15:03]Page Title : Web Authentication
+[11/12/2012|23:15:03]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:15:03]Done reporting HTML status :
+Web Authentication Failure
+[11/12/2012|23:15:03]Page Title : Web Authentication Failure
+[11/12/2012|23:15:04]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/free/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=free@wifi.id&statusCode=1
+[11/12/2012|23:15:04]Done reporting HTML status :
+Selamat datang | Wifi.Id
+[11/12/2012|23:15:04]Page Title : Selamat datang | Wifi.Id
+[11/12/2012|23:16:08]63 break time.
+[11/12/2012|23:16:14]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:16:15]Done reporting HTML status :
+Web Authentication
+[11/12/2012|23:16:15]Page Title : Web Authentication
+[11/12/2012|23:16:15]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:16:15]Done reporting HTML status :
+Logged In
+[11/12/2012|23:16:15]Page Title : Logged In
+[11/12/2012|23:36:28]1196 break time.
+[11/12/2012|23:36:46]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:36:46]Done reporting HTML status :
+Web Authentication
+[11/12/2012|23:36:46]Page Title : Web Authentication
+[11/12/2012|23:36:46]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:36:46]Done reporting HTML status :
+Logged In
+[11/12/2012|23:36:46]Page Title : Logged In
+[11/12/2012|23:56:52]1188 break time.
+[11/12/2012|23:56:58]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:56:58]Done reporting HTML status :
+Web Authentication
+[11/12/2012|23:56:58]Page Title : Web Authentication
+[11/12/2012|23:56:58]Web Direct Link : http://1.1.1.1/login.html
+[11/12/2012|23:56:58]Done reporting HTML status :
+Logged In
+[11/12/2012|23:56:58]Page Title : Logged In
+[12/12/2012|0:17:09]1193 break time.
+[12/12/2012|0:17:15]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:17:16]Done reporting HTML status :
+Web Authentication
+[12/12/2012|0:17:16]Page Title : Web Authentication
+[12/12/2012|0:17:16]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:17:16]Done reporting HTML status :
+Logged In
+[12/12/2012|0:17:16]Page Title : Logged In
+[12/12/2012|0:37:28]1195 break time.
+[12/12/2012|0:38:16]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:38:16]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:38:16]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:39:21]63 break time.
+[12/12/2012|0:40:09]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:40:09]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:40:09]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:41:11]60 break time.
+[12/12/2012|0:41:59]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:41:59]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:41:59]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:43:01]61 break time.
+[12/12/2012|0:43:49]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:43:49]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:43:49]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:44:50]60 break time.
+[12/12/2012|0:45:45]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:45:45]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:45:45]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:46:48]61 break time.
+[12/12/2012|0:47:36]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:47:36]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:47:36]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:48:40]63 break time.
+[12/12/2012|0:49:15]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:49:15]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:49:15]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:50:18]62 break time.
+[12/12/2012|0:51:06]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:51:06]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:51:06]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:52:07]60 break time.
+[12/12/2012|0:52:55]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:52:55]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:52:55]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:54:00]63 break time.
+[12/12/2012|0:54:34]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:54:34]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:54:34]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:55:37]61 break time.
+[12/12/2012|0:56:25]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:56:25]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:56:25]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:57:27]61 break time.
+[12/12/2012|0:58:15]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|0:58:15]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|0:58:15]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|0:59:16]60 break time.
+[12/12/2012|1:00:10]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|1:00:10]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|1:00:10]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|1:01:12]60 break time.
+[12/12/2012|1:02:07]Web Direct Link : http://1.1.1.1/login.html
+[12/12/2012|1:02:07]Done reporting HTML status :
+Internet Explorer cannot display the webpage
+[12/12/2012|1:02:07]Page Title : Internet Explorer cannot display the webpage
+[12/12/2012|1:03:09]61 break time.
+[9/24/2013|5:42:11 PM]49 break time.
+[9/24/2013|5:42:11 PM]Navigate to login page : 1.1.1.1
+[9/24/2013|5:42:13 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:42:13 PM]Page Finishes Loading with success.
+[9/24/2013|5:42:13 PM]Done reporting HTML status :
+Web Authentication
+[9/24/2013|5:42:13 PM]Page Title : Web Authentication
+[9/24/2013|5:42:13 PM]Submitting entry.
+[9/24/2013|5:42:13 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:42:13 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:42:13 PM]Page Finishes Loading with success.
+[9/24/2013|5:42:13 PM]Done reporting HTML status :
+Web Authentication Failure
+[9/24/2013|5:42:13 PM]Page Title : Web Authentication Failure
+[9/24/2013|5:42:13 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:42:13 PM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy%20Instan@wifi.id&statusCode=1
+[9/24/2013|5:42:14 PM]Page Finishes Loading with success.
+[9/24/2013|5:42:14 PM]Done reporting HTML status :
+   
+[9/24/2013|5:42:14 PM]Page Title : 
+[9/24/2013|5:42:14 PM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy Instan@wifi.id&statusCode=1
+[9/24/2013|5:43:15 PM]61 break time.
+[9/24/2013|5:43:15 PM]Navigate to login page : 1.1.1.1
+[9/24/2013|5:43:16 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:43:23 PM]Page Finishes Loading with success.
+[9/24/2013|5:43:23 PM]Done reporting HTML status :
+Web Authentication
+[9/24/2013|5:43:23 PM]Page Title : Web Authentication
+[9/24/2013|5:43:23 PM]Submitting entry.
+[9/24/2013|5:43:23 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:43:25 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:43:25 PM]Page Finishes Loading with success.
+[9/24/2013|5:43:25 PM]Done reporting HTML status :
+Web Authentication Failure
+[9/24/2013|5:43:25 PM]Page Title : Web Authentication Failure
+[9/24/2013|5:43:25 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:43:30 PM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy%20Instan@wifi.id&statusCode=1
+[9/24/2013|5:43:30 PM]Page Finishes Loading with success.
+[9/24/2013|5:43:30 PM]Done reporting HTML status :
+   
+[9/24/2013|5:43:30 PM]Page Title : 
+[9/24/2013|5:43:30 PM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy Instan@wifi.id&statusCode=1
+[9/24/2013|5:43:45 PM]20 break time.
+[9/24/2013|5:43:45 PM]Navigate to login page : 1.1.1.1
+[9/24/2013|5:43:48 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:43:59 PM]Page Finishes Loading with success.
+[9/24/2013|5:43:59 PM]Done reporting HTML status :
+Web Authentication
+[9/24/2013|5:43:59 PM]Page Title : Web Authentication
+[9/24/2013|5:43:59 PM]Submitting entry.
+[9/24/2013|5:43:59 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:44:07 PM]Web Direct Link : http://1.1.1.1/login.html
+[9/24/2013|5:44:07 PM]Page Finishes Loading with success.
+[9/24/2013|5:44:07 PM]Done reporting HTML status :
+Web Authentication Failure
+[9/24/2013|5:44:07 PM]Page Title : Web Authentication Failure
+[9/24/2013|5:44:07 PM]Program finishes loading page: http://1.1.1.1/login.html
+[9/24/2013|5:44:09 PM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy%20Instan@wifi.id&statusCode=1
+[9/24/2013|5:44:09 PM]Page Finishes Loading with success.
+[9/24/2013|5:44:09 PM]Done reporting HTML status :
+   
+[9/24/2013|5:44:09 PM]Page Title : 
+[9/24/2013|5:44:09 PM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=Speedy Instan@wifi.id&statusCode=1
+[9/24/2013|5:47:29 PM]Reconnector Stopped
+[9/24/2013|5:47:29 PM]Program finishes loading page: res://ieframe.dll/navcancl.htm
+[9/25/2013|10:13:42 AM]742 break time.
+[9/25/2013|10:13:42 AM]Navigate to login page : 1.1.1.1
+[9/25/2013|10:13:42 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:13:43 AM]Page Finishes Loading with success.
+[9/25/2013|10:13:45 AM]Done reporting HTML status :
+Web Authentication
+[9/25/2013|10:13:45 AM]Page Title : Web Authentication
+[9/25/2013|10:13:45 AM]Submitting entry.
+[9/25/2013|10:13:45 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:13:45 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:13:45 AM]Page Finishes Loading with success.
+[9/25/2013|10:13:45 AM]Done reporting HTML status :
+Web Authentication Failure
+[9/25/2013|10:13:45 AM]Page Title : Web Authentication Failure
+[9/25/2013|10:13:45 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:14:05 AM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:05 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:05 AM]Done reporting HTML status :
+
+[9/25/2013|10:14:05 AM]Page Title : 
+[9/25/2013|10:14:05 AM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:11 AM]25 break time.
+[9/25/2013|10:14:11 AM]Navigate to login page : 1.1.1.1
+[9/25/2013|10:14:11 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:14:11 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:11 AM]Done reporting HTML status :
+Web Authentication
+[9/25/2013|10:14:11 AM]Page Title : Web Authentication
+[9/25/2013|10:14:11 AM]Submitting entry.
+[9/25/2013|10:14:11 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:14:11 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:14:11 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:11 AM]Done reporting HTML status :
+Web Authentication Failure
+[9/25/2013|10:14:11 AM]Page Title : Web Authentication Failure
+[9/25/2013|10:14:11 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:14:17 AM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:17 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:17 AM]Done reporting HTML status :
+Selamat datang | Wifi.Id
+[9/25/2013|10:14:17 AM]Page Title : Selamat datang | Wifi.Id
+[9/25/2013|10:14:17 AM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:31 AM]20 break time.
+[9/25/2013|10:14:31 AM]Navigate to login page : 1.1.1.1
+[9/25/2013|10:14:34 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:14:34 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:34 AM]Done reporting HTML status :
+Web Authentication
+[9/25/2013|10:14:34 AM]Page Title : Web Authentication
+[9/25/2013|10:14:34 AM]Submitting entry.
+[9/25/2013|10:14:34 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:14:34 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:14:35 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:35 AM]Done reporting HTML status :
+Web Authentication Failure
+[9/25/2013|10:14:35 AM]Page Title : Web Authentication Failure
+[9/25/2013|10:14:35 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:14:38 AM]Web Direct Link : http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:38 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:38 AM]Done reporting HTML status :
+Selamat datang | Wifi.Id
+[9/25/2013|10:14:38 AM]Page Title : Selamat datang | Wifi.Id
+[9/25/2013|10:14:38 AM]Program finishes loading page: http://welcome.indonesiawifi.net/wifi.id/default/?switch_url=http://1.1.1.1/login.html&ap_mac=54:78:1a:73:1c:90&wlan=@wifi.id&statusCode=5
+[9/25/2013|10:14:55 AM]20 break time.
+[9/25/2013|10:14:55 AM]Navigate to login page : 1.1.1.1
+[9/25/2013|10:14:55 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:14:55 AM]Page Finishes Loading with success.
+[9/25/2013|10:14:55 AM]Done reporting HTML status :
+Web Authentication
+[9/25/2013|10:14:55 AM]Page Title : Web Authentication
+[9/25/2013|10:14:55 AM]Submitting entry.
+[9/25/2013|10:14:55 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:15:15 AM]20 break time.
+[9/25/2013|10:15:15 AM]Navigate to login page : 1.1.1.1
+[9/25/2013|10:15:18 AM]Web Direct Link : http://1.1.1.1/login.html
+[9/25/2013|10:15:19 AM]Page Finishes Loading with success.
+[9/25/2013|10:15:19 AM]Done reporting HTML status :
+This page can’t be displayed
+[9/25/2013|10:15:19 AM]Page Title : This page can’t be displayed
+[9/25/2013|10:15:19 AM]Program finishes loading page: http://1.1.1.1/login.html
+[9/25/2013|10:15:25 AM]Reconnector Stopped

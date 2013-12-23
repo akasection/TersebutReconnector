@@ -1,0 +1,3 @@
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.exe
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.xml
+C:\Users\SECTION\Documents\Visual Studio 2010\Projects\wifi.premium\wifiid\obj\x86\Release\Tersebut Premium.pdb

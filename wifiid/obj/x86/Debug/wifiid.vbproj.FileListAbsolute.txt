@@ -1,0 +1,11 @@
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\bin\Debug\wifiid.exe
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\bin\Debug\wifiid.pdb
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\bin\Debug\wifiid.xml
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\wifiid.Form1.resources
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\wifiid.Resources.resources
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\wifiid.exe
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\wifiid.xml
+c:\users\section\documents\visual studio 2010\Projects\wifiid\wifiid\obj\x86\Debug\wifiid.pdb
