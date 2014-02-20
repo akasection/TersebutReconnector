@@ -19,6 +19,10 @@ TersebutPremium
 	<summary>
   Looks up a localized string similar to TiDZRi5dyF8udCnnEAIHkI8SxEIXiedJ.
 </summary>
+</member><member name="P:Reconnector.My.Resources.Resources.high_standard">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Reconnector.My.Resources.Resources.regVersion">
 	<summary>
   Looks up a localized string similar to 1.2.4788.
@@ -28,6 +32,26 @@ TersebutPremium
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Reconnector.My.Resources.Resources.tersebut">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Reconnector.My.Resources.Resources.tersebut_custom">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Reconnector.My.Resources.Resources.tersebut_highgaming">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Reconnector.My.Resources.Resources.tersebut_lowgaming">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Reconnector.My.Resources.Resources.tersebut_perfect">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Reconnector.My.Resources.Resources.tersebut_work">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

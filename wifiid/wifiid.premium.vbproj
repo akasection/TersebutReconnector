@@ -78,8 +78,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -97,11 +99,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="baseForm_Preset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baseForm_System.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CryptModule.vb" />
     <Compile Include="Dialog1.Designer.vb">
       <DependentUpon>Dialog1.vb</DependentUpon>
     </Compile>
     <Compile Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baseForm_Function.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HotKeyModule.vb" />
@@ -193,6 +204,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tersebut2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high_standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tersebut_custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tersebut_highgaming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tersebut_lowgaming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tersebut_work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tersebut_perfect.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

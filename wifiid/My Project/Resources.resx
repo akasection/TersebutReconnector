@@ -136,4 +136,22 @@
   <data name="tersebut2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tersebut2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="high_standard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\high_standard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tersebut_custom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tersebut_custom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tersebut_highgaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tersebut_highgaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tersebut_lowgaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tersebut_lowgaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tersebut_perfect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tersebut_perfect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tersebut_work" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tersebut_work.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -10,8 +10,13 @@ Module IniModule
                                              "ACCTYPE",
                                              "PASSWORD",
                                              "VIEWLATENCY",
-                                             "MAXPING"
+                                             "MAXPING",
+                                             "GATEWAY",
+                                             "LEGACY",
+                                             "PRESET",
+                                             "SAMPLES"
                                             }
+
     Public Function ReadINI(ByVal INIpath As String) As String()()
         If Not My.Computer.FileSystem.FileExists(INIpath) Then
             Return Nothing
@@ -45,7 +50,7 @@ Module IniModule
         'Path = App.Path & DIR_SYSTEM & "config.fsys"
         'Microsoft.VisualBasic.FileOpen(openNUmber, INIpath, OpenMode.Output)
         'WRITE HEADERS!
-        temp += "//Tersebut Reconnector Premium Configuration" & vbNewLine & "//Created by SECTION" & vbNewLine & "//INI Version 1.1" & vbNewLine & vbNewLine
+        temp += "//Tersebut Reconnector Premium Configuration" & vbNewLine & "//Created by SECTION" & vbNewLine & "//Program Version " + Application.ProductVersion + vbNewLine + "//INI Version 1.1" & vbNewLine & vbNewLine
         'WriteLine(openNUmber, temp)
         For a As Integer = 0 To Containment.Length - 1 Step 1
             temp += Containment(a)(0) + "=" + Containment(a)(1) + vbNewLine

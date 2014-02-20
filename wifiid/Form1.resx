@@ -132,16 +132,19 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>293, 17</value>
   </metadata>
-  <metadata name="ttt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>607, 17</value>
-  </metadata>
-  <data name="NumericUpDown1.ToolTip" xml:space="preserve">
-    <value>TimeSafe Timeout (in second)
+  <data name="ckLegacyBrowser.ToolTip" xml:space="preserve">
+    <value>Legacy Reconnect Method (Compatibility)
 
-Defines how long program will prevent program to reconnect 
-after last successful reconnection.This is used for low signal wifi 
-that program might force to reconnect because false detection of 
-login expiration.</value>
+Right now, Tersebut is using new algorithm to
+reconnect wifi.id, allowing user to reconnect faster and
+low overhead. Yet this is still experimental, you can
+always backward into old algorithm that already proven
+to be working.
+
+Note : This should be keep disabled and continue use
+the new one, unless the new algorithm really wrecks 
+the reconnection.
+</value>
   </data>
   <data name="numTolerance.ToolTip" xml:space="preserve">
     <value>Reconnect Tolerance (in ping interval miliseconds)
@@ -172,7 +175,7 @@ login expiration.</value>
 their wifi connection when connected to access point known
 as @wifi.id, free@wifi.id, speedyInstan@wifi.id, and several
 Telkom wireless products that acquire login to connect and 
-dropped every frequent times.
+dropped every frequent time.
 
 Tersebut is not affiliated by referenced corporation such as
 Telkomsel or Telkom, as this program is only a third-party
