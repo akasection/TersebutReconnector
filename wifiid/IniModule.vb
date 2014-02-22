@@ -14,7 +14,8 @@ Module IniModule
                                              "GATEWAY",
                                              "LEGACY",
                                              "PRESET",
-                                             "SAMPLES"
+                                             "SAMPLES",
+                                             "DISPLAY"
                                             }
 
     Public Function ReadINI(ByVal INIpath As String) As String()()

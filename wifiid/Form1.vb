@@ -253,4 +253,5 @@ Public Class baseForm
         btnSelectPresets.Enabled = True
         ShiftPreset(False)
     End Sub
+
 End Class

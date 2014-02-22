@@ -46,7 +46,9 @@ Partial Class baseForm
         Me.OpenWebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnAbout = New System.Windows.Forms.ToolStripMenuItem()
-        Me.groupSettings = New System.Windows.Forms.GroupBox()
+        Me.windowControl = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cbDisplay = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.txtGateway = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -57,7 +59,6 @@ Partial Class baseForm
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ckLatencyView = New System.Windows.Forms.CheckBox()
         Me.numMaxInterval = New System.Windows.Forms.NumericUpDown()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ckSavePassword = New System.Windows.Forms.CheckBox()
@@ -75,6 +76,7 @@ Partial Class baseForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.ckLatencyView = New System.Windows.Forms.CheckBox()
         Me.btnSelectPresets = New System.Windows.Forms.Button()
         Me.ckClose = New System.Windows.Forms.CheckBox()
         Me.miniIcon = New System.Windows.Forms.NotifyIcon(Me.components)
@@ -95,6 +97,7 @@ Partial Class baseForm
         Me.lblTitleLatency = New System.Windows.Forms.Label()
         Me.TabMaster = New System.Windows.Forms.TabControl()
         Me.tabMonitor = New System.Windows.Forms.TabPage()
+        Me.chartPing = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.tabLog = New System.Windows.Forms.TabPage()
         Me.txtLogger = New System.Windows.Forms.RichTextBox()
         Me.tabAbout = New System.Windows.Forms.TabPage()
@@ -110,10 +113,9 @@ Partial Class baseForm
         Me.lblPreset = New System.Windows.Forms.Label()
         Me.imgPreset = New System.Windows.Forms.PictureBox()
         Me.txtDescription = New System.Windows.Forms.TextBox()
-        Me.chartPing = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.context.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.groupSettings.SuspendLayout()
+        Me.windowControl.SuspendLayout()
         CType(Me.numSamples, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numMaxInterval, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numTolerance, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,13 +124,13 @@ Partial Class baseForm
         Me.miniMenu.SuspendLayout()
         Me.TabMaster.SuspendLayout()
         Me.tabMonitor.SuspendLayout()
+        CType(Me.chartPing, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabLog.SuspendLayout()
         Me.tabAbout.SuspendLayout()
         Me.panelAbout.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgPreset, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.chartPing, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'context
@@ -165,11 +167,13 @@ Partial Class baseForm
         '
         'wb
         '
+        Me.wb.IsWebBrowserContextMenuEnabled = False
         Me.wb.Location = New System.Drawing.Point(8, 360)
         Me.wb.MinimumSize = New System.Drawing.Size(23, 23)
         Me.wb.Name = "wb"
         Me.wb.Size = New System.Drawing.Size(292, 212)
         Me.wb.TabIndex = 99
+        Me.wb.WebBrowserShortcutsEnabled = False
         '
         'Button3
         '
@@ -274,45 +278,66 @@ Partial Class baseForm
         Me.mnAbout.Text = "About"
         Me.mnAbout.Visible = False
         '
-        'groupSettings
+        'windowControl
         '
-        Me.groupSettings.Controls.Add(Me.Label17)
-        Me.groupSettings.Controls.Add(Me.txtGateway)
-        Me.groupSettings.Controls.Add(Me.Label16)
-        Me.groupSettings.Controls.Add(Me.numSamples)
-        Me.groupSettings.Controls.Add(Me.Label14)
-        Me.groupSettings.Controls.Add(Me.Label13)
-        Me.groupSettings.Controls.Add(Me.ckLegacyBrowser)
-        Me.groupSettings.Controls.Add(Me.Label12)
-        Me.groupSettings.Controls.Add(Me.Label11)
-        Me.groupSettings.Controls.Add(Me.Label10)
-        Me.groupSettings.Controls.Add(Me.ckLatencyView)
-        Me.groupSettings.Controls.Add(Me.numMaxInterval)
-        Me.groupSettings.Controls.Add(Me.Label9)
-        Me.groupSettings.Controls.Add(Me.ckSavePassword)
-        Me.groupSettings.Controls.Add(Me.txtPassword)
-        Me.groupSettings.Controls.Add(Me.comboAccount)
-        Me.groupSettings.Controls.Add(Me.Label8)
-        Me.groupSettings.Controls.Add(Me.lblUsername)
-        Me.groupSettings.Controls.Add(Me.lblPassword)
-        Me.groupSettings.Controls.Add(Me.usname)
-        Me.groupSettings.Controls.Add(Me.numTolerance)
-        Me.groupSettings.Controls.Add(Me.Label5)
-        Me.groupSettings.Controls.Add(Me.ckLog)
-        Me.groupSettings.Controls.Add(Me.numTimeSafe)
-        Me.groupSettings.Controls.Add(Me.ckVerbose)
-        Me.groupSettings.Controls.Add(Me.Label4)
-        Me.groupSettings.Controls.Add(Me.numInterval)
-        Me.groupSettings.Controls.Add(Me.Label3)
-        Me.groupSettings.Controls.Add(Me.Button6)
-        Me.groupSettings.Controls.Add(Me.Button5)
-        Me.groupSettings.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.groupSettings.Location = New System.Drawing.Point(644, 28)
-        Me.groupSettings.Name = "groupSettings"
-        Me.groupSettings.Size = New System.Drawing.Size(312, 564)
-        Me.groupSettings.TabIndex = 11
-        Me.groupSettings.TabStop = False
-        Me.groupSettings.Text = "Settings"
+        Me.windowControl.Controls.Add(Me.Label2)
+        Me.windowControl.Controls.Add(Me.cbDisplay)
+        Me.windowControl.Controls.Add(Me.Label17)
+        Me.windowControl.Controls.Add(Me.txtGateway)
+        Me.windowControl.Controls.Add(Me.Label16)
+        Me.windowControl.Controls.Add(Me.numSamples)
+        Me.windowControl.Controls.Add(Me.Label14)
+        Me.windowControl.Controls.Add(Me.Label13)
+        Me.windowControl.Controls.Add(Me.ckLegacyBrowser)
+        Me.windowControl.Controls.Add(Me.Label12)
+        Me.windowControl.Controls.Add(Me.Label11)
+        Me.windowControl.Controls.Add(Me.Label10)
+        Me.windowControl.Controls.Add(Me.numMaxInterval)
+        Me.windowControl.Controls.Add(Me.Label9)
+        Me.windowControl.Controls.Add(Me.ckSavePassword)
+        Me.windowControl.Controls.Add(Me.txtPassword)
+        Me.windowControl.Controls.Add(Me.comboAccount)
+        Me.windowControl.Controls.Add(Me.Label8)
+        Me.windowControl.Controls.Add(Me.lblUsername)
+        Me.windowControl.Controls.Add(Me.lblPassword)
+        Me.windowControl.Controls.Add(Me.usname)
+        Me.windowControl.Controls.Add(Me.numTolerance)
+        Me.windowControl.Controls.Add(Me.Label5)
+        Me.windowControl.Controls.Add(Me.ckLog)
+        Me.windowControl.Controls.Add(Me.numTimeSafe)
+        Me.windowControl.Controls.Add(Me.ckVerbose)
+        Me.windowControl.Controls.Add(Me.Label4)
+        Me.windowControl.Controls.Add(Me.numInterval)
+        Me.windowControl.Controls.Add(Me.Label3)
+        Me.windowControl.Controls.Add(Me.Button6)
+        Me.windowControl.Controls.Add(Me.Button5)
+        Me.windowControl.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.windowControl.Location = New System.Drawing.Point(644, 28)
+        Me.windowControl.Name = "windowControl"
+        Me.windowControl.Size = New System.Drawing.Size(312, 564)
+        Me.windowControl.TabIndex = 11
+        Me.windowControl.TabStop = False
+        Me.windowControl.Text = "Settings"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(134, 240)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(90, 15)
+        Me.Label2.TabIndex = 117
+        Me.Label2.Text = "Latency Display"
+        '
+        'cbDisplay
+        '
+        Me.cbDisplay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbDisplay.FormattingEnabled = True
+        Me.cbDisplay.Items.AddRange(New Object() {"Average", "Exact", "Optimized", "Off"})
+        Me.cbDisplay.Location = New System.Drawing.Point(137, 257)
+        Me.cbDisplay.Name = "cbDisplay"
+        Me.cbDisplay.Size = New System.Drawing.Size(146, 23)
+        Me.cbDisplay.TabIndex = 116
+        Me.ttt.SetToolTip(Me.cbDisplay, "Display the what kind result of the ping " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "on the main screen.")
         '
         'Label17
         '
@@ -416,17 +441,6 @@ Partial Class baseForm
         Me.Label10.Size = New System.Drawing.Size(175, 20)
         Me.Label10.TabIndex = 106
         Me.Label10.Text = "Ping Configuration"
-        '
-        'ckLatencyView
-        '
-        Me.ckLatencyView.AutoSize = True
-        Me.ckLatencyView.Location = New System.Drawing.Point(128, 257)
-        Me.ckLatencyView.Name = "ckLatencyView"
-        Me.ckLatencyView.Size = New System.Drawing.Size(156, 19)
-        Me.ckLatencyView.TabIndex = 9
-        Me.ckLatencyView.Text = "Display Average Latency"
-        Me.ttt.SetToolTip(Me.ckLatencyView, "Display the result of the ping on the main screen.")
-        Me.ckLatencyView.UseVisualStyleBackColor = True
         '
         'numMaxInterval
         '
@@ -595,6 +609,18 @@ Partial Class baseForm
         Me.ttt.SetToolTip(Me.Button5, "Save the configuration you have been made.")
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'ckLatencyView
+        '
+        Me.ckLatencyView.AutoSize = True
+        Me.ckLatencyView.Location = New System.Drawing.Point(382, 540)
+        Me.ckLatencyView.Name = "ckLatencyView"
+        Me.ckLatencyView.Size = New System.Drawing.Size(156, 19)
+        Me.ckLatencyView.TabIndex = 9
+        Me.ckLatencyView.Text = "Display Average Latency"
+        Me.ttt.SetToolTip(Me.ckLatencyView, "Display the result of the ping on the main screen.")
+        Me.ckLatencyView.UseVisualStyleBackColor = True
+        Me.ckLatencyView.Visible = False
+        '
         'btnSelectPresets
         '
         Me.btnSelectPresets.Enabled = False
@@ -745,11 +771,11 @@ Partial Class baseForm
         '
         Me.lblTitleLatency.AutoSize = True
         Me.lblTitleLatency.Font = New System.Drawing.Font("Lucida Sans Unicode", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitleLatency.Location = New System.Drawing.Point(42, 333)
+        Me.lblTitleLatency.Location = New System.Drawing.Point(91, 333)
         Me.lblTitleLatency.Name = "lblTitleLatency"
-        Me.lblTitleLatency.Size = New System.Drawing.Size(160, 25)
+        Me.lblTitleLatency.Size = New System.Drawing.Size(113, 25)
         Me.lblTitleLatency.TabIndex = 103
-        Me.lblTitleLatency.Text = "avg.Latency: "
+        Me.lblTitleLatency.Text = "Latency: "
         Me.lblTitleLatency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabMaster
@@ -773,6 +799,60 @@ Partial Class baseForm
         Me.tabMonitor.TabIndex = 1
         Me.tabMonitor.Text = "Latency Monitor"
         Me.tabMonitor.UseVisualStyleBackColor = True
+        '
+        'chartPing
+        '
+        Me.chartPing.BorderlineWidth = 0
+        ChartArea1.AxisX.InterlacedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        ChartArea1.AxisX.Interval = 1.0R
+        ChartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
+        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver
+        ChartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisX.Minimum = 1.0R
+        ChartArea1.AxisX2.LineColor = System.Drawing.Color.DimGray
+        ChartArea1.AxisX2.LineWidth = 3
+        ChartArea1.AxisY.IsLogarithmic = True
+        ChartArea1.AxisY.IsMarginVisible = False
+        ChartArea1.AxisY.LineWidth = 3
+        ChartArea1.AxisY.TitleForeColor = System.Drawing.Color.DimGray
+        ChartArea1.AxisY2.Crossing = -1.7976931348623157E+308R
+        ChartArea1.AxisY2.LineColor = System.Drawing.Color.White
+        ChartArea1.AxisY2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea1.AxisY2.LineWidth = 3
+        ChartArea1.AxisY2.MajorGrid.Interval = 200.0R
+        ChartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea1.AxisY2.MinorGrid.Enabled = True
+        ChartArea1.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White
+        ChartArea1.BorderColor = System.Drawing.Color.White
+        ChartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
+        ChartArea1.CursorY.AxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
+        ChartArea1.CursorY.IsUserEnabled = True
+        ChartArea1.CursorY.IsUserSelectionEnabled = True
+        ChartArea1.CursorY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
+        ChartArea1.CursorY.SelectionColor = System.Drawing.Color.Gray
+        ChartArea1.Name = "charts"
+        Me.chartPing.ChartAreas.Add(ChartArea1)
+        Me.chartPing.Location = New System.Drawing.Point(6, 6)
+        Me.chartPing.Name = "chartPing"
+        Me.chartPing.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
+        Me.chartPing.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.Black}
+        Series1.BorderWidth = 3
+        Series1.ChartArea = "charts"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series1.EmptyPointStyle.Color = System.Drawing.Color.Red
+        Series1.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series1.IsValueShownAsLabel = True
+        Series1.IsVisibleInLegend = False
+        Series1.IsXValueIndexed = True
+        Series1.MarkerBorderWidth = 3
+        Series1.Name = "dataSeries"
+        Series1.ShadowColor = System.Drawing.Color.Gray
+        Series1.ShadowOffset = 1
+        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Double]
+        Series1.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
+        Me.chartPing.Series.Add(Series1)
+        Me.chartPing.Size = New System.Drawing.Size(612, 257)
+        Me.chartPing.TabIndex = 0
         '
         'tabLog
         '
@@ -935,60 +1015,6 @@ Partial Class baseForm
         Me.txtDescription.TabIndex = 118
         Me.txtDescription.Text = "<CONTENT_DESCRIPTION>"
         '
-        'chartPing
-        '
-        Me.chartPing.BorderlineWidth = 0
-        ChartArea1.AxisX.InterlacedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        ChartArea1.AxisX.Interval = 1.0R
-        ChartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
-        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver
-        ChartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea1.AxisX.Minimum = 1.0R
-        ChartArea1.AxisX2.LineColor = System.Drawing.Color.DimGray
-        ChartArea1.AxisX2.LineWidth = 3
-        ChartArea1.AxisY.IsLogarithmic = True
-        ChartArea1.AxisY.IsMarginVisible = False
-        ChartArea1.AxisY.LineWidth = 3
-        ChartArea1.AxisY.TitleForeColor = System.Drawing.Color.DimGray
-        ChartArea1.AxisY2.Crossing = -1.7976931348623157E+308R
-        ChartArea1.AxisY2.LineColor = System.Drawing.Color.White
-        ChartArea1.AxisY2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea1.AxisY2.LineWidth = 3
-        ChartArea1.AxisY2.MajorGrid.Interval = 200.0R
-        ChartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea1.AxisY2.MinorGrid.Enabled = True
-        ChartArea1.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White
-        ChartArea1.BorderColor = System.Drawing.Color.White
-        ChartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
-        ChartArea1.CursorY.AxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
-        ChartArea1.CursorY.IsUserEnabled = True
-        ChartArea1.CursorY.IsUserSelectionEnabled = True
-        ChartArea1.CursorY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
-        ChartArea1.CursorY.SelectionColor = System.Drawing.Color.Gray
-        ChartArea1.Name = "charts"
-        Me.chartPing.ChartAreas.Add(ChartArea1)
-        Me.chartPing.Location = New System.Drawing.Point(6, 6)
-        Me.chartPing.Name = "chartPing"
-        Me.chartPing.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
-        Me.chartPing.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.Black}
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "charts"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series1.EmptyPointStyle.Color = System.Drawing.Color.Red
-        Series1.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series1.IsValueShownAsLabel = True
-        Series1.IsVisibleInLegend = False
-        Series1.IsXValueIndexed = True
-        Series1.MarkerBorderWidth = 3
-        Series1.Name = "dataSeries"
-        Series1.ShadowColor = System.Drawing.Color.Gray
-        Series1.ShadowOffset = 1
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Double]
-        Series1.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
-        Me.chartPing.Series.Add(Series1)
-        Me.chartPing.Size = New System.Drawing.Size(612, 257)
-        Me.chartPing.TabIndex = 0
-        '
         'baseForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -1003,7 +1029,8 @@ Partial Class baseForm
         Me.Controls.Add(Me.TabMaster)
         Me.Controls.Add(Me.lblLatency)
         Me.Controls.Add(Me.lblTitleLatency)
-        Me.Controls.Add(Me.groupSettings)
+        Me.Controls.Add(Me.windowControl)
+        Me.Controls.Add(Me.ckLatencyView)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button4)
@@ -1024,8 +1051,8 @@ Partial Class baseForm
         Me.context.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.groupSettings.ResumeLayout(False)
-        Me.groupSettings.PerformLayout()
+        Me.windowControl.ResumeLayout(False)
+        Me.windowControl.PerformLayout()
         CType(Me.numSamples, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.numMaxInterval, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.numTolerance, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1034,6 +1061,7 @@ Partial Class baseForm
         Me.miniMenu.ResumeLayout(False)
         Me.TabMaster.ResumeLayout(False)
         Me.tabMonitor.ResumeLayout(False)
+        CType(Me.chartPing, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabLog.ResumeLayout(False)
         Me.tabAbout.ResumeLayout(False)
         Me.panelAbout.ResumeLayout(False)
@@ -1041,7 +1069,6 @@ Partial Class baseForm
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgPreset, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.chartPing, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1055,7 +1082,7 @@ Partial Class baseForm
     Friend WithEvents ckLog As System.Windows.Forms.CheckBox
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents AdvancedConfig As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents groupSettings As System.Windows.Forms.GroupBox
+    Friend WithEvents windowControl As System.Windows.Forms.GroupBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents numTolerance As System.Windows.Forms.NumericUpDown
@@ -1130,5 +1157,7 @@ Partial Class baseForm
     Friend WithEvents btnRight As System.Windows.Forms.Button
     Friend WithEvents txtDescription As System.Windows.Forms.TextBox
     Friend WithEvents chartPing As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cbDisplay As System.Windows.Forms.ComboBox
 
 End Class

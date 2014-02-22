@@ -1,11 +1,11 @@
 ﻿//Tersebut Reconnector Premium Configuration
 //Created by SECTION
-//Program Version 1.7.5164.30073
+//Program Version 1.7.5164.21982
 //INI Version 1.1
 
 PING_INTERVAL=350
-TIME_SAFE=3000
-RTO_TOLERANCE=3
+TIME_SAFE=30
+RTO_TOLERANCE=2
 VERBOSE=False
 LOG_TO_FILE=False
 TRAY=False
@@ -18,4 +18,3 @@ GATEWAY=1.1.1.1
 LEGACY=False
 PRESET=5
 SAMPLES=30
-DISPLAY=Optimized

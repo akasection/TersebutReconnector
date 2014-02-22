@@ -27,6 +27,8 @@
     Dim ReconnectorReactivation As New Timer
     Dim loadBrowser As Integer
 
+    Private Property LatencyDisplay As String
+
     Private Sub WebBrowser1_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles wb.DocumentCompleted
         If isProgramStarted Then
             'InjectBlocker()
@@ -281,15 +283,22 @@
         _msMaximumPing = numMaxInterval.Value
 
         'View
-        If ckLatencyView.Checked Then
-            _Message += "Latency : Show" + vbCrLf + ""
-        Else
-            _Message += "Latency : Hide" + vbCrLf + ""
-        End If
-        lblLatency.Visible = ckLatencyView.Checked
-        lblTitleLatency.Visible = ckLatencyView.Checked
+        'If ckLatencyView.Checked Then
+        '_Message += "Latency : Show" + vbCrLf + ""
+        'Else
+        '_Message += "Latency : Hide" + vbCrLf + ""
+        'End If
+        lblLatency.Visible = True 'ckLatencyView.Checked
+        lblTitleLatency.Visible = True 'ckLatencyView.Checked
+        _Message += "Latency Display : " + cbDisplay.Text + vbCrLf + ""
         'MessagingStatus()
-
+        TabMaster.TabPages.Remove(tabMonitor)
+        If cbDisplay.Text = "Off" Then
+            TabMaster.TabPages.Remove(tabMonitor)
+        Else
+            TabMaster.TabPages.Insert(0, tabMonitor)
+        End If
+        LatencyDisplay = cbDisplay.Text
         'USERNAME
         _Message += "Username : " + usname.Text + " " + vbCrLf + "Account Type : " + comboAccount.Text + "" + vbCrLf + ""
         'MessagingStatus()
@@ -326,7 +335,7 @@
 
         SaveConfiguration()
         OpenClose()
-        TabMaster.SelectTab(1)
+        TabMaster.SelectTab(tabLog)
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -359,6 +368,7 @@
             ckClose.Checked = Boolean.Parse(GetOptionValue(ArrayConfig, "TRAY"))
             usname.Text = GetOptionValue(ArrayConfig, "USERNAME")
             comboAccount.Text = GetOptionValue(ArrayConfig, "ACCTYPE")
+
             txtPassword.Text = GetOptionValue(ArrayConfig, "PASSWORD")
             ckSavePassword.Checked = Int2Boolean(txtPassword.TextLength)
             ckLatencyView.Checked = Boolean.Parse(GetOptionValue(ArrayConfig, "VIEWLATENCY"))
@@ -369,10 +379,11 @@
             Gateway = GetOptionValue(ArrayConfig, "GATEWAY")
             numSamples.Value = Integer.Parse(GetOptionValue(ArrayConfig, "SAMPLES"))
             selectedPreset = Integer.Parse(GetOptionValue(ArrayConfig, "PRESET"))
+            cbDisplay.Text = GetOptionValue(ArrayConfig, "DISPLAY")
 
             'Binding property 1.7 to variable
             numSample = numSamples.Value
-
+            LatencyDisplay = cbDisplay.Text
             legacyConnection = ckLegacyBrowser.Checked
 
             _Message += "Loaded configuration from " + Path
@@ -413,10 +424,12 @@
         Me.Icon = My.Resources.tersebut2
         miniIcon.Icon = My.Resources.tersebut2
 
-        'CHART!
-        For a As Integer = 0 To numSample
-            'chartPing.Series("dataSeries").Points.AddXY(a, 0)
-        Next a
+        TabMaster.TabPages.Remove(tabMonitor)
+        If cbDisplay.Text = "Off" Then
+            TabMaster.TabPages.Remove(tabMonitor)
+        Else
+            TabMaster.TabPages.Insert(0, tabMonitor)
+        End If
         'UPS! License Checker! :3
         If Not UnlockMod.GetRegistered() Then
             'Licensing.ShowDialog(Me)

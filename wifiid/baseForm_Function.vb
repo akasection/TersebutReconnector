@@ -53,7 +53,7 @@
         SetOptionValue(ArrayConfig, "LEGACY", ckLegacyBrowser.Checked)
         SetOptionValue(ArrayConfig, "PRESET", selectedPreset) 'Actually this isn't needed :p but well...
         SetOptionValue(ArrayConfig, "SAMPLES", numSamples.Value)
-
+        SetOptionValue(ArrayConfig, "DISPLAY", cbDisplay.Text)
         'Save
         IniModule.WriteINI(Path, ArrayConfig)
 
@@ -150,7 +150,6 @@
             'Coloring time
             Try
                 Dim g As Double = Double.Parse(_Message)
-
                 lastLatency = g
                 LatencyQueue.Enqueue(g)
                 chartPing.Series("dataSeries").Points.AddY(g)
@@ -163,6 +162,7 @@
 
             Catch e As FormatException
                 LatencyQueue.Enqueue(_msMaximumPing)
+                lastLatency = _msMaximumPing
                 chartPing.Series("dataSeries").Points.AddY(_msMaximumPing)
 
                 If (LatencyQueue.Count > numSample) Then
@@ -171,7 +171,25 @@
                 End If
             End Try
             chartPing.ChartAreas(0).Axes(3).Maximum = LatencyQueue.Max
-            Dim avedata As Double = Math.Ceiling(LatencyQueue.Average)
+            ''' To give more bounce to current ping
+            ''' We add increasing number of last ping to increase the factor of last ping.
+            ''' 
+            Dim avedata As Double
+            If LatencyDisplay = "Off" Then
+                'TabMaster.TabPages.Remove(tabMonitor)
+                'TabMaster.TabPages(0).Hide()
+            Else
+                'TabMaster.TabPages.Add(tabMonitor)
+                If LatencyDisplay = "Exact" Then
+                    avedata = lastLatency
+                ElseIf LatencyDisplay = "Average" Then
+                    avedata = Math.Ceiling(LatencyQueue.Sum / LatencyQueue.Count)
+                ElseIf LatencyDisplay = "Optimized" Then
+                    Dim BounceNumber As Integer = 16
+                    avedata = Math.Ceiling((LatencyQueue.Sum + (BounceNumber * lastLatency)) / (LatencyQueue.Count + BounceNumber))
+                End If
+            End If
+
             If avedata > 0 And avedata <= 50 Then
                 lblLatency.ForeColor = Color.DarkGreen
             ElseIf avedata > 50 And avedata <= 200 Then
@@ -181,6 +199,8 @@
             End If
             lblLatency.Text = avedata.ToString + "ms"
             _Message = ""
+
+           
         End If
     End Sub
 
