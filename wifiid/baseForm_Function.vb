@@ -54,6 +54,7 @@
         SetOptionValue(ArrayConfig, "PRESET", selectedPreset) 'Actually this isn't needed :p but well...
         SetOptionValue(ArrayConfig, "SAMPLES", numSamples.Value)
         SetOptionValue(ArrayConfig, "DISPLAY", cbDisplay.Text)
+        SetOptionValue(ArrayConfig, "LOGINPAGE", cbLogin.Text)
         'Save
         IniModule.WriteINI(Path, ArrayConfig)
         

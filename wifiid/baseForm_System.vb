@@ -12,6 +12,7 @@ Partial Public Class baseForm
     Private isLogged = False
     Private userName As String
     Private password As String = ""
+    Private LoginPage As String = "/login.html"
 
     'New Property v1.7
     Private Gateway As String = "1.1.1.1"
@@ -42,7 +43,7 @@ Partial Public Class baseForm
                 MessagingStatus()
                 wb.Stop()
                 NavigateState = False
-                wb.Navigate("http://" + Gateway + "/login.html")
+                wb.Navigate("http://" + Gateway + LoginPage)
                 Exit Sub
             Else
                 _Message += "Document Completed."
@@ -133,7 +134,7 @@ Partial Public Class baseForm
                 MessagingStatus()
                 wb.Stop()
                 NavigateState = False
-                wb.Navigate("http://" + Gateway + "/login.html")
+                wb.Navigate("http://" + Gateway + LoginPage)
             End If
         End If
     End Sub
@@ -223,7 +224,7 @@ Partial Public Class baseForm
                     _Message += "Waiting the HTML to be opened."
                     MessagingStatus()
                     Logging("Navigate to login page : " + Gateway + "")
-                    wb.Navigate("http://" + Gateway + "/login.html") '''TODO : login.html changed!
+                    wb.Navigate("http://" + Gateway + LoginPage) '''TODO : login.html changed!
 
                 Else
                     _Message += "Sending POST Data to gateway."
@@ -331,6 +332,10 @@ Partial Public Class baseForm
             _Message += "Use Legacy Method : No." + vbCrLf + ""
         End If
 
+        'EXPERIMENTAL
+        _Message += "Login page : " + cbLogin.Text
+        LoginPage = cbLogin.Text
+
         'Gateway
         _Message += "Gateway : " + Gateway + " -> " + txtGateway.Text + "" + vbCrLf + ""
         Gateway = txtGateway.Text
@@ -392,12 +397,16 @@ Partial Public Class baseForm
             numSamples.Value = Integer.Parse(GetOptionValue(ArrayConfig, "SAMPLES"))
             selectedPreset = Integer.Parse(GetOptionValue(ArrayConfig, "PRESET"))
             cbDisplay.Text = GetOptionValue(ArrayConfig, "DISPLAY")
+            cbLogin.Text = GetOptionValue(ArrayConfig, "LOGINPAGE")
 
             'Binding property 1.7 to variable
             numSample = numSamples.Value
             LatencyDisplay = cbDisplay.Text
             legacyConnection = ckLegacyBrowser.Checked
-
+            If cbLogin.Text.Length < 1 Then
+                cbLogin.Text = cbLogin.Items(0)
+            End If
+            LoginPage = cbLogin.Text
             _Message += "Loaded configuration from " + Path
             MessagingStatus()
             'Binding Property 1.4 to variable
@@ -423,6 +432,7 @@ Partial Public Class baseForm
         numTimeSafe.Value = timeToleranceLimit
         numTolerance.Value = RTOTolerance
         numMaxInterval.Value = _msMaximumPing
+        If Gateway.Length < 1 Then Gateway = "1.1.1.1"
         txtGateway.Text = Gateway
         lblLatency.Visible = ckLatencyView.Checked
         lblTitleLatency.Visible = ckLatencyView.Checked

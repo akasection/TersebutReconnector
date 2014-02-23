@@ -47,7 +47,7 @@ Partial Class baseForm
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.windowControl = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbLogin = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbDisplay = New System.Windows.Forms.ComboBox()
@@ -283,7 +283,7 @@ Partial Class baseForm
         '
         'windowControl
         '
-        Me.windowControl.Controls.Add(Me.ComboBox1)
+        Me.windowControl.Controls.Add(Me.cbLogin)
         Me.windowControl.Controls.Add(Me.Label15)
         Me.windowControl.Controls.Add(Me.Label2)
         Me.windowControl.Controls.Add(Me.cbDisplay)
@@ -324,16 +324,17 @@ Partial Class baseForm
         Me.windowControl.TabStop = False
         Me.windowControl.Text = "Settings"
         '
-        'ComboBox1
+        'cbLogin
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"/login.html", "/authwag/login/check_login.php"})
-        Me.ComboBox1.Location = New System.Drawing.Point(153, 98)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(140, 23)
-        Me.ComboBox1.TabIndex = 120
-        Me.ttt.SetToolTip(Me.ComboBox1, "Display the what kind result of the ping " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "on the main screen.")
-        Me.ComboBox1.Visible = False
+        Me.cbLogin.FormattingEnabled = True
+        Me.cbLogin.Items.AddRange(New Object() {"/login.html", "/authwag/login/check_login.php"})
+        Me.cbLogin.Location = New System.Drawing.Point(153, 98)
+        Me.cbLogin.Name = "cbLogin"
+        Me.cbLogin.Size = New System.Drawing.Size(140, 23)
+        Me.cbLogin.TabIndex = 120
+        Me.ttt.SetToolTip(Me.cbLogin, "EXPERIMENTAL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Sets the custom login page of wifi.id to do login." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(NP : By de" & _
+        "fault this was set to /login.html." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If this isn't configured properly, then prog" & _
+        "ram will" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "be malfunction.)")
         '
         'Label15
         '
@@ -343,7 +344,6 @@ Partial Class baseForm
         Me.Label15.Size = New System.Drawing.Size(129, 15)
         Me.Label15.TabIndex = 119
         Me.Label15.Text = "Login Page (Advanced)"
-        Me.Label15.Visible = False
         '
         'Label2
         '
@@ -1189,7 +1189,7 @@ Partial Class baseForm
     Friend WithEvents chartPing As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cbDisplay As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbLogin As System.Windows.Forms.ComboBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents timerwakeup As System.Windows.Forms.Timer
 
