@@ -17,6 +17,25 @@
         My.Resources.tersebut_perfect,
         My.Resources.tersebut_custom}
 
+    Dim NumericPreset As Integer()()
+
+    Private Sub InitializePresets()
+        ReDim NumericPreset(6)
+        ReDim NumericPreset(6)(0)
+        ReDim NumericPreset(6)(1)
+        ReDim NumericPreset(6)(2)
+        ReDim NumericPreset(6)(3)
+        ReDim NumericPreset(6)(4)
+        ReDim NumericPreset(6)(5)
+
+        'Input Numbers
+        NumericPreset(0) = {500, 2000, 30, 4} 'Low Gaming
+        NumericPreset(1) = {1000, 4000, 1, 6} 'Works
+        NumericPreset(2) = {350, 1000, 30, 5} 'High Gaming
+        NumericPreset(3) = {350, 2000, 60, 4} 'High Standard
+        NumericPreset(4) = {200, 750, 1, 2} 'Perfect
+        NumericPreset(5) = {_msTimeToPing, _msMaximumPing, timeToleranceLimit, RTOTolerance}
+    End Sub
     Private Sub ShiftPreset(ByVal toLeft As Boolean)
         If toLeft Then
             currentShowPreset -= 1
@@ -46,5 +65,25 @@
         btnSelectPresets.Text = "Selected"
         btnSelectPresets.Enabled = False
 
+        'Set Property
+        selectedPreset = whichPreset
+        _msTimeToPing = NumericPreset(whichPreset)(0)
+        _msMaximumPing = NumericPreset(whichPreset)(1)
+        timeToleranceLimit = NumericPreset(whichPreset)(2)
+        RTOTolerance = NumericPreset(whichPreset)(3)
+
+        'Set Interface
+        numInterval.Value = _msTimeToPing
+        numMaxInterval.Value = _msMaximumPing
+        numTimeSafe.Value = timeToleranceLimit
+        numTolerance.Value = RTOTolerance
+        'Save Configuration
+        SaveConfiguration()
+        _Message += "Preset Enabled : " + Preset(selectedPreset)
+        MessagingStatus()
+        _Message += "Preset : " + Preset(selectedPreset)
+        MessagingStatus2()
+        TabMaster.SelectTab(tabLog)
     End Sub
+
 End Class

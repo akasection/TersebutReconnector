@@ -56,7 +56,7 @@
         SetOptionValue(ArrayConfig, "DISPLAY", cbDisplay.Text)
         'Save
         IniModule.WriteINI(Path, ArrayConfig)
-
+        
     End Sub
 
     Public Function Int2Boolean(ByVal int As Integer) As Boolean

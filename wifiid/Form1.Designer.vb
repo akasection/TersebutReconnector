@@ -333,6 +333,7 @@ Partial Class baseForm
         Me.ComboBox1.Size = New System.Drawing.Size(140, 23)
         Me.ComboBox1.TabIndex = 120
         Me.ttt.SetToolTip(Me.ComboBox1, "Display the what kind result of the ping " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "on the main screen.")
+        Me.ComboBox1.Visible = False
         '
         'Label15
         '
@@ -342,6 +343,7 @@ Partial Class baseForm
         Me.Label15.Size = New System.Drawing.Size(129, 15)
         Me.Label15.TabIndex = 119
         Me.Label15.Text = "Login Page (Advanced)"
+        Me.Label15.Visible = False
         '
         'Label2
         '

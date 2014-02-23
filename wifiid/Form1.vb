@@ -189,8 +189,8 @@ Public Class baseForm
         Else
 
             If comboAccount.Text = "Speedy" Then
-                txtPassword.Text = "123"
-                txtPassword.Enabled = False
+                'txtPassword.Text = "123"
+                txtPassword.Enabled = True
             Else
                 txtPassword.Enabled = True
             End If
@@ -248,6 +248,7 @@ Public Class baseForm
 
     Private Sub btnSelectPresets_Click(sender As System.Object, e As System.EventArgs) Handles btnSelectPresets.Click
         btnSelectPresets.Enabled = False
+        SetPreset(currentShowPreset)
     End Sub
 
     Private Sub btnLeft_Click(sender As System.Object, e As System.EventArgs) Handles btnLeft.Click

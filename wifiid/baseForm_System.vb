@@ -335,6 +335,11 @@ Partial Public Class baseForm
         _Message += "Gateway : " + Gateway + " -> " + txtGateway.Text + "" + vbCrLf + ""
         Gateway = txtGateway.Text
 
+        'Represet
+        txtDescription.Text = PresetDescription(selectedPreset)
+        imgPreset.Image = PresetImage(selectedPreset)
+        btnSelectPresets.Text = "Selected"
+        btnSelectPresets.Enabled = False
 
         acctype = GetAccountType(comboAccount.Text)
         _Message += "====== End of Option ======"
@@ -423,7 +428,7 @@ Partial Public Class baseForm
         lblTitleLatency.Visible = ckLatencyView.Checked
 
         OpenClose()
-
+        InitializePresets()
         SetPreset(selectedPreset)
 
         'UI Update
@@ -462,7 +467,7 @@ Partial Public Class baseForm
         request.Host = Gateway
 
         Dim postData As String = "buttonClicked=4&err_flag=0&err_msg=&info_flag=0&info_msg=&redirect_url="
-        postData += "&username=" + userName + "&password=" + password
+        postData += "&username=" + userName + GetAccountType(acctype) + "&password=" + password
 
         Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
         request.ContentLength = byteArray.Length
@@ -506,7 +511,7 @@ Partial Public Class baseForm
         request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
         request.ContentType = "application/x-www-form-urlencoded"""
         request.Host = Gateway
-        request.Timeout = 1000
+        'request.Timeout = 1000
         Dim postData As String = "userStatus=1&err_flag=0&err_msg="
         Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
         request.ContentLength = byteArray.Length
