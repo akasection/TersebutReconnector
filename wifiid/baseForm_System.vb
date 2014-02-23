@@ -224,10 +224,10 @@ Partial Public Class baseForm
                     _Message += "Waiting the HTML to be opened."
                     MessagingStatus()
                     Logging("Navigate to login page : " + Gateway + "")
-                    wb.Navigate("http://" + Gateway + LoginPage) '''TODO : login.html changed!
+                    wb.Navigate("http://" + Gateway + LoginPage)
 
                 Else
-                    _Message += "Sending POST Data to gateway."
+                    _Message += "Sending POST Data to location : http://" + Gateway + LoginPage
                     MessagingStatus()
                     Logging("SENDING POST DATA : " + Gateway)
                     CallLogout()
@@ -333,7 +333,7 @@ Partial Public Class baseForm
         End If
 
         'EXPERIMENTAL
-        _Message += "Login page : " + cbLogin.Text
+        _Message += "Login page : " + cbLogin.Text + vbCrLf
         LoginPage = cbLogin.Text
 
         'Gateway
@@ -466,7 +466,7 @@ Partial Public Class baseForm
     End Sub
 
     Public Sub CallLogin()
-        Dim request As HttpWebRequest = HttpWebRequest.Create("http://" + Gateway + "/login.html")
+        Dim request As HttpWebRequest = HttpWebRequest.Create("http://" + Gateway + LoginPage)
 
         'Prepare Request
         request.Method = WebRequestMethods.Http.Post
@@ -475,7 +475,7 @@ Partial Public Class baseForm
         request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
         request.ContentType = "application/x-www-form-urlencoded"""
         request.Host = Gateway
-
+        request.Timeout = _msMaximumPing * RTOTolerance * 4
         Dim postData As String = "buttonClicked=4&err_flag=0&err_msg=&info_flag=0&info_msg=&redirect_url="
         postData += "&username=" + userName + GetAccountType(acctype) + "&password=" + password
 
@@ -484,10 +484,23 @@ Partial Public Class baseForm
         Logging(postData)
         MessagingStatus()
         'Send Request
-        Dim writer As Stream = request.GetRequestStream()
-        writer.Write(byteArray, 0, byteArray.Length)
-        writer.Close()
 
+        Try
+            Dim writer As Stream = request.GetRequestStream()
+            writer.Write(byteArray, 0, byteArray.Length)
+            writer.Close()
+
+        Catch e As Exception
+            _Message += e.StackTrace
+            MessagingStatus()
+        Finally
+            cunt = 0
+            globalcounter = 0
+            loadBrowser = 0
+            AcquireState = False
+            NavigateState = True
+            ActionCommand = 3
+        End Try
         'Read Response (VERBOSE)
         If isVerbosed Then
             Dim response As WebResponse = request.GetResponse()
@@ -521,17 +534,21 @@ Partial Public Class baseForm
         request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
         request.ContentType = "application/x-www-form-urlencoded"""
         request.Host = Gateway
-        'request.Timeout = 1000
+        request.Timeout = _msMaximumPing * RTOTolerance * 2
         Dim postData As String = "userStatus=1&err_flag=0&err_msg="
         Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
         request.ContentLength = byteArray.Length
         Logging(postData)
         MessagingStatus()
         'Send Request
-        Dim writer As Stream = request.GetRequestStream()
-        writer.Write(byteArray, 0, byteArray.Length)
-        writer.Close()
-
+        Try
+            Dim writer As Stream = request.GetRequestStream()
+            writer.Write(byteArray, 0, byteArray.Length)
+            writer.Close()
+        Catch e As Exception
+            _Message += e.StackTrace
+            MessagingStatus()
+        End Try
         'Read Response (VERBOSE)
         If isVerbosed Then
             Dim response As WebResponse = request.GetResponse()
