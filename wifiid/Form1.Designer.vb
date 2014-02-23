@@ -47,6 +47,8 @@ Partial Class baseForm
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.windowControl = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbDisplay = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -90,8 +92,8 @@ Partial Class baseForm
         Me.Button4 = New System.Windows.Forms.Button()
         Me.ttt = New System.Windows.Forms.ToolTip(Me.components)
         Me.lblLatency = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnStop = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
         Me.btnLeft = New System.Windows.Forms.Button()
         Me.btnRight = New System.Windows.Forms.Button()
         Me.lblTitleLatency = New System.Windows.Forms.Label()
@@ -113,6 +115,7 @@ Partial Class baseForm
         Me.lblPreset = New System.Windows.Forms.Label()
         Me.imgPreset = New System.Windows.Forms.PictureBox()
         Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.timerwakeup = New System.Windows.Forms.Timer(Me.components)
         Me.context.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.windowControl.SuspendLayout()
@@ -280,6 +283,8 @@ Partial Class baseForm
         '
         'windowControl
         '
+        Me.windowControl.Controls.Add(Me.ComboBox1)
+        Me.windowControl.Controls.Add(Me.Label15)
         Me.windowControl.Controls.Add(Me.Label2)
         Me.windowControl.Controls.Add(Me.cbDisplay)
         Me.windowControl.Controls.Add(Me.Label17)
@@ -318,6 +323,25 @@ Partial Class baseForm
         Me.windowControl.TabIndex = 11
         Me.windowControl.TabStop = False
         Me.windowControl.Text = "Settings"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"/login.html", "/authwag/login/check_login.php"})
+        Me.ComboBox1.Location = New System.Drawing.Point(153, 98)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(140, 23)
+        Me.ComboBox1.TabIndex = 120
+        Me.ttt.SetToolTip(Me.ComboBox1, "Display the what kind result of the ping " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "on the main screen.")
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(154, 82)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(129, 15)
+        Me.Label15.TabIndex = 119
+        Me.Label15.Text = "Login Page (Advanced)"
         '
         'Label2
         '
@@ -726,28 +750,28 @@ Partial Class baseForm
         " means fair quality (but be warned)." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Red means poor quality." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Black means impos" & _
         "sible.")
         '
-        'Button2
+        'btnStop
         '
-        Me.Button2.Enabled = False
-        Me.Button2.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(471, 360)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 46)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Stop Reconnector"
-        Me.ttt.SetToolTip(Me.Button2, "Hotkey : Alt-F12 (Toggles with Start)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stops the reconnector.")
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnStop.Enabled = False
+        Me.btnStop.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStop.Location = New System.Drawing.Point(471, 360)
+        Me.btnStop.Name = "btnStop"
+        Me.btnStop.Size = New System.Drawing.Size(150, 46)
+        Me.btnStop.TabIndex = 2
+        Me.btnStop.Text = "Stop Reconnector"
+        Me.ttt.SetToolTip(Me.btnStop, "Hotkey : Alt-F12 (Toggles with Start)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stops the reconnector.")
+        Me.btnStop.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnStart
         '
-        Me.Button1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(319, 360)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(146, 46)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Start Reconnector"
-        Me.ttt.SetToolTip(Me.Button1, "Hotkey : Alt-F12 (Toggles with Stop)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Starts the reconnector.")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnStart.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.Location = New System.Drawing.Point(319, 360)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(146, 46)
+        Me.btnStart.TabIndex = 1
+        Me.btnStart.Text = "Start Reconnector"
+        Me.ttt.SetToolTip(Me.btnStart, "Hotkey : Alt-F12 (Toggles with Stop)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Starts the reconnector.")
+        Me.btnStart.UseVisualStyleBackColor = True
         '
         'btnLeft
         '
@@ -1015,6 +1039,10 @@ Partial Class baseForm
         Me.txtDescription.TabIndex = 118
         Me.txtDescription.Text = "<CONTENT_DESCRIPTION>"
         '
+        'timerwakeup
+        '
+        Me.timerwakeup.Interval = 30000
+        '
         'baseForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -1031,8 +1059,8 @@ Partial Class baseForm
         Me.Controls.Add(Me.lblTitleLatency)
         Me.Controls.Add(Me.windowControl)
         Me.Controls.Add(Me.ckLatencyView)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnStop)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.wb)
@@ -1145,8 +1173,8 @@ Partial Class baseForm
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnStop As System.Windows.Forms.Button
+    Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents btnSelectPresets As System.Windows.Forms.Button
     Friend WithEvents Label17 As System.Windows.Forms.Label
@@ -1159,5 +1187,8 @@ Partial Class baseForm
     Friend WithEvents chartPing As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents cbDisplay As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents timerwakeup As System.Windows.Forms.Timer
 
 End Class

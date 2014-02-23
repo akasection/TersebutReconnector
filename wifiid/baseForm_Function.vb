@@ -254,7 +254,7 @@
             If isFirstInstall Then OpenClose()
 
             'Button2.Enabled = True
-            Button1.Enabled = True
+            btnStart.Enabled = True
 
             'Button4.Enabled = True
             StartReconnectorToolStripMenuItem.Enabled = True
@@ -269,8 +269,8 @@
                 MessageBox.Show("Uninstall Suceeded.", "Installation", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 _Message += "Reconnector Service Uninstalled."
                 MessagingStatus()
-                Button2.Enabled = False
-                Button1.Enabled = False
+                btnStop.Enabled = False
+                btnStart.Enabled = False
 
                 StartReconnectorToolStripMenuItem.Enabled = False
                 StopReconnectorToolStripMenuItem.Enabled = False

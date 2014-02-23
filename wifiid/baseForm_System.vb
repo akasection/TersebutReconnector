@@ -1,4 +1,8 @@
-﻿Partial Public Class baseForm
+﻿Imports System.Net
+Imports System.Text
+Imports System.IO
+
+Partial Public Class baseForm
 
     'Property v1.4
     Private _msTimeToPing = 2000
@@ -214,19 +218,22 @@
                         MessagingStatus()
                     End If
 #End If
+                If legacyConnection = True Then
+                    'code sendform http
+                    _Message += "Waiting the HTML to be opened."
+                    MessagingStatus()
+                    Logging("Navigate to login page : " + Gateway + "")
+                    wb.Navigate("http://" + Gateway + "/login.html") '''TODO : login.html changed!
 
-                'code sendform http
-                _Message += "Waiting the HTML to be opened."
-                MessagingStatus()
-                Logging("Navigate to login page : " + Gateway + "")
-                wb.Navigate("http://" + Gateway + "/login.html")
-                'theThread.Suspend()
+                Else
+                    _Message += "Sending POST Data to gateway."
+                    MessagingStatus()
+                    Logging("SENDING POST DATA : " + Gateway)
+                    CallLogout()
+                    CallLogin()
 
+                End If
             End If
-
-            'If AcquireState Then
-            'Thread.Sleep(Timeout.Infinite)
-            'End If
 
         Loop
     End Sub
@@ -350,8 +357,8 @@
             OpenClose()
             StopReconnectorToolStripMenuItem.Enabled = False
             StartReconnectorToolStripMenuItem.Enabled = False
-            Button2.Enabled = False
-            Button1.Enabled = False
+            btnStop.Enabled = False
+            btnStart.Enabled = False
             'Sizing
             Me.Size = C_WINDOW_SIZE
         End If
@@ -389,6 +396,7 @@
             _Message += "Loaded configuration from " + Path
             MessagingStatus()
             'Binding Property 1.4 to variable
+            userName = usname.Text
             password = txtPassword.Text
             isVerbosed = ckVerbose.Checked
             isLogged = ckLog.Checked
@@ -440,5 +448,88 @@
 
         'Hotkeys EXPERIMENTAL
         RegisterHotKey(Me.Handle, 100, MOD_ALT, Keys.F12)
+    End Sub
+
+    Public Sub CallLogin()
+        Dim request As HttpWebRequest = HttpWebRequest.Create("http://" + Gateway + "/login.html")
+
+        'Prepare Request
+        request.Method = WebRequestMethods.Http.Post
+        request.Accept = "text/html, application/xhtml+xml, */*"
+        request.Referer = "http://" + Gateway + "/login.html"
+        request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
+        request.ContentType = "application/x-www-form-urlencoded"""
+        request.Host = Gateway
+
+        Dim postData As String = "buttonClicked=4&err_flag=0&err_msg=&info_flag=0&info_msg=&redirect_url="
+        postData += "&username=" + userName + "&password=" + password
+
+        Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
+        request.ContentLength = byteArray.Length
+        Logging(postData)
+        MessagingStatus()
+        'Send Request
+        Dim writer As Stream = request.GetRequestStream()
+        writer.Write(byteArray, 0, byteArray.Length)
+        writer.Close()
+
+        'Read Response (VERBOSE)
+        If isVerbosed Then
+            Dim response As WebResponse = request.GetResponse()
+            _Message += (CType(response, HttpWebResponse).StatusDescription)
+            MessagingStatus()
+            Dim dataStream As New StreamReader(response.GetResponseStream())
+            Dim responseFromServer As String = dataStream.ReadToEnd()
+            _Message += responseFromServer
+            MessagingStatus()
+            Logging(responseFromServer)
+            Logging((CType(response, HttpWebResponse).StatusDescription))
+            dataStream.Close()
+            response.Close()
+        End If
+        'Same Endpoint
+        cunt = 0
+        globalcounter = 0
+        loadBrowser = 0
+        AcquireState = False
+        NavigateState = True
+        ActionCommand = 3
+    End Sub
+
+    Public Sub CallLogout()
+        Dim request As HttpWebRequest = HttpWebRequest.Create("http://" + Gateway + "/logout.html")
+
+        'Prepare Request
+        request.Method = WebRequestMethods.Http.Post
+        request.Accept = "text/html, application/xhtml+xml, */*"
+        request.Referer = "http://" + Gateway + "/logout.html"
+        request.UserAgent = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko"
+        request.ContentType = "application/x-www-form-urlencoded"""
+        request.Host = Gateway
+        request.Timeout = 1000
+        Dim postData As String = "userStatus=1&err_flag=0&err_msg="
+        Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
+        request.ContentLength = byteArray.Length
+        Logging(postData)
+        MessagingStatus()
+        'Send Request
+        Dim writer As Stream = request.GetRequestStream()
+        writer.Write(byteArray, 0, byteArray.Length)
+        writer.Close()
+
+        'Read Response (VERBOSE)
+        If isVerbosed Then
+            Dim response As WebResponse = request.GetResponse()
+            _Message += (CType(response, HttpWebResponse).StatusDescription)
+            MessagingStatus()
+            Dim dataStream As New StreamReader(response.GetResponseStream())
+            Dim responseFromServer As String = dataStream.ReadToEnd()
+            _Message += responseFromServer
+            MessagingStatus()
+            Logging(responseFromServer)
+            Logging((CType(response, HttpWebResponse).StatusDescription))
+            dataStream.Close()
+            response.Close()
+        End If
     End Sub
 End Class

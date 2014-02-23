@@ -50,16 +50,17 @@ Public Class baseForm
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStart.Click
+        timerwakeup.Stop()
         isProgramStarted = True
-        Button1.Enabled = False
+        btnStart.Enabled = False
         Button3.Enabled = False
         Timer1.Enabled = True
         pinger = New ICMPClass
         _Message += "Begin :" + " " + "Pinging Gateway : " + Gateway
         MessagingStatus()
         Timer2.Start()
-        Button2.Enabled = True
+        btnStop.Enabled = True
         globalcounter = timeToleranceLimit
 
         threadAwaker = New StayAwake()
@@ -73,13 +74,13 @@ Public Class baseForm
         StopReconnectorToolStripMenuItem.Enabled = True
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStop.Click
         isProgramStarted = False
         'Timer1.Stop()
         Timer2.Stop()
         wb.Stop()
-        Button1.Enabled = True
-        Button2.Enabled = False
+        btnStart.Enabled = True
+        btnStop.Enabled = False
         Button3.Enabled = False
         _Message += "Reconnector has been stopped."
         MessagingStatus()
@@ -179,7 +180,7 @@ Public Class baseForm
     End Sub
 
     Private Sub comboAccount_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles comboAccount.SelectedIndexChanged
-        If comboAccount.Text = "free@wifi.id" Then
+        If comboAccount.Text = "free@wifi.id" Or comboAccount.Text = "BandungJuara@wifi.id" Then
             usname.Visible = False
             txtPassword.Visible = False
             ckSavePassword.Visible = False
@@ -227,10 +228,16 @@ Public Class baseForm
         If ActionCommand = 1 Then 'Command : Stop
             ActionCommand = 0
             Button2_Click(Me, Nothing)
+            timerwakeup.Start()
         End If
         If ActionCommand = 2 Then 'Command : Start
             ActionCommand = 0
             Button1_Click(Me, Nothing)
+        End If
+        If ActionCommand = 3 Then 'Command : Start Timer
+            ActionCommand = 0
+            Timer2.Stop()
+            Timer2.Start()
         End If
     End Sub
 
@@ -254,4 +261,9 @@ Public Class baseForm
         ShiftPreset(False)
     End Sub
 
+    Private Sub timerwakeup_Tick(sender As System.Object, e As System.EventArgs) Handles timerwakeup.Tick
+        Button1_Click(Me, Nothing)
+    End Sub
+
+   
 End Class
