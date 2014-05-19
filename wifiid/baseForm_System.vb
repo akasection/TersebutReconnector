@@ -326,10 +326,12 @@ Partial Public Class baseForm
         password = txtPassword.Text
 
         'Legacy
-        If ckSavePassword.Checked Then
+        If ckLegacyBrowser.Checked Then
             _Message += "Use Legacy Method : Yes" + vbCrLf + ""
+            legacyConnection = True
         Else
             _Message += "Use Legacy Method : No." + vbCrLf + ""
+            legacyConnection = False
         End If
 
         'EXPERIMENTAL
@@ -352,7 +354,9 @@ Partial Public Class baseForm
 
         SaveConfiguration()
         OpenClose()
+        AdvancedConfig.Enabled = True
         TabMaster.SelectTab(tabLog)
+
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

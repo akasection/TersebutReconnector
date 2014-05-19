@@ -25,8 +25,8 @@ Partial Class baseForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(baseForm))
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.context = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.tcopy = New System.Windows.Forms.ToolStripMenuItem()
         Me.tselAll = New System.Windows.Forms.ToolStripMenuItem()
@@ -406,7 +406,7 @@ Partial Class baseForm
         Me.ttt.SetToolTip(Me.numSamples, "Number of Samples " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Defines how many samples that latency take to make" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "an aver" & _
         "age of current latency. If set to 1, it will show" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "current latency, ignoring lat" & _
         "ency value in the past.")
-        Me.numSamples.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.numSamples.Value = New Decimal(New Integer() {15, 0, 0, 0})
         '
         'Label14
         '
@@ -513,7 +513,7 @@ Partial Class baseForm
         '
         Me.comboAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.comboAccount.FormattingEnabled = True
-        Me.comboAccount.Items.AddRange(New Object() {"SPIN", "Speedy", "Flexi", "Voucher", "Telkomsel FLASHZone", "Radnet", "free@wifi.id", "BandungJuara@wifi.id", "SPINSurprise", "Telkom Gift", "Esia", "*Generic"})
+        Me.comboAccount.Items.AddRange(New Object() {"Speedy Instan (SPIN)", "Speedy", "Flexi", "Telkomsel FLASHZone", "Esia", "free@wifi.id", "BandungJuara@wifi.id", "Voucher", "Radnet", "Telkom Gift", "SPIN Lama", "*Generic"})
         Me.comboAccount.Location = New System.Drawing.Point(7, 328)
         Me.comboAccount.Name = "comboAccount"
         Me.comboAccount.Size = New System.Drawing.Size(146, 23)
@@ -829,54 +829,54 @@ Partial Class baseForm
         'chartPing
         '
         Me.chartPing.BorderlineWidth = 0
-        ChartArea1.AxisX.InterlacedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        ChartArea1.AxisX.Interval = 1.0R
-        ChartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
-        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver
-        ChartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea1.AxisX.Minimum = 1.0R
-        ChartArea1.AxisX2.LineColor = System.Drawing.Color.DimGray
-        ChartArea1.AxisX2.LineWidth = 3
-        ChartArea1.AxisY.IsLogarithmic = True
-        ChartArea1.AxisY.IsMarginVisible = False
-        ChartArea1.AxisY.LineWidth = 3
-        ChartArea1.AxisY.TitleForeColor = System.Drawing.Color.DimGray
-        ChartArea1.AxisY2.Crossing = -1.7976931348623157E+308R
-        ChartArea1.AxisY2.LineColor = System.Drawing.Color.White
-        ChartArea1.AxisY2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
-        ChartArea1.AxisY2.LineWidth = 3
-        ChartArea1.AxisY2.MajorGrid.Interval = 200.0R
-        ChartArea1.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea1.AxisY2.MinorGrid.Enabled = True
-        ChartArea1.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White
-        ChartArea1.BorderColor = System.Drawing.Color.White
-        ChartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
-        ChartArea1.CursorY.AxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
-        ChartArea1.CursorY.IsUserEnabled = True
-        ChartArea1.CursorY.IsUserSelectionEnabled = True
-        ChartArea1.CursorY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
-        ChartArea1.CursorY.SelectionColor = System.Drawing.Color.Gray
-        ChartArea1.Name = "charts"
-        Me.chartPing.ChartAreas.Add(ChartArea1)
+        ChartArea3.AxisX.InterlacedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        ChartArea3.AxisX.Interval = 1.0R
+        ChartArea3.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
+        ChartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver
+        ChartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisX.Minimum = 1.0R
+        ChartArea3.AxisX2.LineColor = System.Drawing.Color.DimGray
+        ChartArea3.AxisX2.LineWidth = 3
+        ChartArea3.AxisY.IsLogarithmic = True
+        ChartArea3.AxisY.IsMarginVisible = False
+        ChartArea3.AxisY.LineWidth = 3
+        ChartArea3.AxisY.TitleForeColor = System.Drawing.Color.DimGray
+        ChartArea3.AxisY2.Crossing = -1.7976931348623157E+308R
+        ChartArea3.AxisY2.LineColor = System.Drawing.Color.White
+        ChartArea3.AxisY2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot
+        ChartArea3.AxisY2.LineWidth = 3
+        ChartArea3.AxisY2.MajorGrid.Interval = 200.0R
+        ChartArea3.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea3.AxisY2.MinorGrid.Enabled = True
+        ChartArea3.AxisY2.MinorGrid.LineColor = System.Drawing.Color.White
+        ChartArea3.BorderColor = System.Drawing.Color.White
+        ChartArea3.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
+        ChartArea3.CursorY.AxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
+        ChartArea3.CursorY.IsUserEnabled = True
+        ChartArea3.CursorY.IsUserSelectionEnabled = True
+        ChartArea3.CursorY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
+        ChartArea3.CursorY.SelectionColor = System.Drawing.Color.Gray
+        ChartArea3.Name = "charts"
+        Me.chartPing.ChartAreas.Add(ChartArea3)
         Me.chartPing.Location = New System.Drawing.Point(6, 6)
         Me.chartPing.Name = "chartPing"
         Me.chartPing.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
         Me.chartPing.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.Black}
-        Series1.BorderWidth = 3
-        Series1.ChartArea = "charts"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series1.EmptyPointStyle.Color = System.Drawing.Color.Red
-        Series1.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series1.IsValueShownAsLabel = True
-        Series1.IsVisibleInLegend = False
-        Series1.IsXValueIndexed = True
-        Series1.MarkerBorderWidth = 3
-        Series1.Name = "dataSeries"
-        Series1.ShadowColor = System.Drawing.Color.Gray
-        Series1.ShadowOffset = 1
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Double]
-        Series1.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
-        Me.chartPing.Series.Add(Series1)
+        Series3.BorderWidth = 3
+        Series3.ChartArea = "charts"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series3.EmptyPointStyle.Color = System.Drawing.Color.Red
+        Series3.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series3.IsValueShownAsLabel = True
+        Series3.IsVisibleInLegend = False
+        Series3.IsXValueIndexed = True
+        Series3.MarkerBorderWidth = 3
+        Series3.Name = "dataSeries"
+        Series3.ShadowColor = System.Drawing.Color.Gray
+        Series3.ShadowOffset = 1
+        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.[Double]
+        Series3.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary
+        Me.chartPing.Series.Add(Series3)
         Me.chartPing.Size = New System.Drawing.Size(612, 257)
         Me.chartPing.TabIndex = 0
         '

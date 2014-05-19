@@ -112,10 +112,12 @@ Public Class baseForm
 
     Private Sub AdvancedConfigToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdvancedConfig.Click
         OpenClose()
+        AdvancedConfig.Enabled = False
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
         OpenClose()
+        AdvancedConfig.Enabled = True
     End Sub
 
 #Region "UI Event"

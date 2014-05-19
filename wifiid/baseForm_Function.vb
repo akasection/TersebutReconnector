@@ -87,10 +87,10 @@
         'Flexi()
         'Speedy()
         'Voucher()
-        If p1 = "SPIN" Then
+        If p1 = "SPIN Lama" Then
             Return "@SPIN"
         End If
-        If p1 = "SPINSurprise" Then
+        If p1 = "Speedy Instan (SPIN)" Then
             Return "@spin2"
         End If
         If p1 = "Speedy" Then
