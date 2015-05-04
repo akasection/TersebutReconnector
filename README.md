@@ -1,7 +1,10 @@
 ****************************
 Tersebut Reconnector
+
 Readme & Changelog
+
 by SECTION (Section_another@hotmail.com)
+
 Contact : fb.com/akasection | axection.deviantart.com | akasection.tumblr.com
 ****************************
 Note untuk versi 1.8.xxxx : 
